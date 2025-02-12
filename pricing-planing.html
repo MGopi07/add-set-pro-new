@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Title of The Page -->
+    <title> Plans & Pricing</title>
+
+    <!-- Meta Informations -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Add-Me Pro">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Favicon -->
+    <link rel="icon" href="image/logo/favicon.png" type="image/x-icon">
+
+    <!-- font-awsome css  -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- jquery.Fancybox.min css -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <!-- style css  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- responsive css  -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <style>
+        .w-70 {
+            width: 70% !important;
+        }
+
+        .card {
+            border-radius: 8px;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            box-shadow: 5px 5px 25px rgba(137, 141, 154, .3);
+            border-radius: 16px;
+            padding: 10px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body .btn {
+            margin-top: auto;
+        }
+
+        .pricing-card {
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            transition: all 0.6s;
+            box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-plan-features {
+            list-style: none;
+            padding: 0;
+            font-size: 14px;
+            color: #303132;
+        }
+
+        .pricing-plan-icon {
+            display: inline-block;
+            font-size: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pricing-plan-cost {
+            font-weight: bold;
+            margin-bottom: 29px;
+        }
+
+        .pricing-plan-purchase-btn:hover {
+            box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .pricing-plan {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .pricing-sub-title {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: black;
+            font-size: 19px;
+        }
+
+        .fas.fa-check.mx-2 {
+            color: #303132;
+        }
+
+        .btn {
+            border-radius: 8px !important;
+            transition: all 0.3s;
+
+        }
+
+        .heading_underline {
+
+            content: "";
+            width: 50px;
+            height: 2px;
+            background-color: #6638d1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .contact-btn , .btn-submit {
+            border-radius: 8px;
+            padding: 13px 30px;
+            color: #fff;
+            font-size: 18px;
+            background: #ff6828;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transition: all 0.5s ease 0s;
+            -moz-transition: all 0.5s ease 0s;
+            -ms-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+        }
+
+        .modal-header {
+            border: none !important;
+        }
+        .btn-close{
+            font-size: 16px;
+            color: #fff;
+            background-color: #48557b;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            padding: 10px 8px;
+            margin-left: auto;
+        }
+        .btn-close i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       .custom-plan-form-container{
+        padding: 40px !important;
+       }
+    </style>
+</head>
+<!-- Spinner loader Start -->
+<div class="loader">
+    <div id="loading-bar-spinner" class="spinner">
+        <div class="spinner-icon"></div>
+    </div>
+</div>
+<!-- Spinner loader End -->
+
+<body>
+    <!-- Header STARTS Here -->
+    <header class="header-style-4">
+        <!-- Navbar STARTS Here -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="lazy w-70" data-src="image/logo/logo.png" src="image/logo/logo.png" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end main-navigation" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a href="index.html">Home</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Services</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="blog.html">Blog</a>
+
+                        </li>
+                        <li class="nav-item active">
+                            <a href="pricing-planing.html">Pricing</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contacts</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_end">
+
+                    <div class="all_btn">
+                        <a class="toggle_search cart-contents header_icons" href="javascript:void(0)">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <!-- Form Search on Header -->
+                        <div class="h-search-form-field">
+                            <div class="h-search-form-inner">
+                                <form role="search" method="get" id="search-form" class="search-form" action="#">
+                                    <input type="search" class="search-field" placeholder="Search…" name="Search…">
+                                    <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all_btn">
+                        
+                        <a class="btn" href="login.html">Login</a>
+
+                    </div>
+                </div>
+                <button class="navbar-toggler toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation"><span></span></button>
+            </div>
+        </nav>
+        <!-- Navbar ENDS Here -->
+    </header>
+    <!-- Header ENDS Here -->
+
+    <!-- content Start Here -->
+    <div class="site-content">
+        <!-- Page-Header Section STARTS Here -->
+        <div class="page-header text-center">
+            <div class="container">
+                <h1 class="page-title">Plans & Pricing</h1>
+
+                <p class="index-header__subtitle">
+
+                    Adsetspro tools are crafted to elevate your business to the next level, providing all your
+                    marketing needs in one place. Our dedicated team is ready to propel your firm into the next
+                    generation of success.
+                </p>
+            </div>
+        </div>
+        <!-- Page-Header Section End Here -->
+        <!-- Contact-Us Section STARTS Here -->
+        <section>
+            <div class="container">
+                <div class="heading text-left">
+                    <h4 class="text-center">Pay Monthly. Pay annually, get 1 month free.</h4>
+                    <div class="heading_underline mb-4"></div>
+
+                </div>
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-md-4 mb-4">
+                        <div class="card pricing-card pricing-plan-community h-100">
+                            <div class="card-body d-flex flex-column">
+                                <i class="fas fa-rocket pricing-plan-icon"></i>
+                                <div class="pricing-plan">
+                                    <p class="pricing-plan-title">Basic</p>
+                                    <h3 class="pricing-plan-cost">₹2999</h3>
+                                </div>
+                                <p class="pricing-sub-title">For Small Business:</p>
+                                <ul class="pricing-plan-features">
+                                    <li><i class="fas fa-check mx-2"></i> Manage 2 Projects</li>
+                                    <li><i class="fas fa-check mx-2"></i> Access detailed Facebook Ad Set audience
+                                        insights</li>
+                                    <li><i class="fas fa-check mx-2"></i> Receive 2 professional social media posters
+                                        for Ads</li>
+                                    <li><i class="fas fa-check mx-2"></i> 20 Fast Indexing Backlinks</li>
+                                </ul>
+                                <div class="mt-auto d-flex justify-content-center">
+                                    <a href="#!" class="btn pricing-plan-purchase-btn">Choose Plan</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card pricing-card pricing-card-highlighted pricing-plan-pro h-100">
+                            <div class="card-body d-flex flex-column">
+                                <i class="fas fa-unlock-alt pricing-plan-icon"></i>
+                                <div class="pricing-plan">
+                                    <p class="pricing-plan-title">Standard</p>
+                                    <h3 class="pricing-plan-cost">₹4999</h3>
+                                </div>
+
+                                <p class="pricing-sub-title">Perfect for Freelancers:</p>
+                                <ul class="pricing-plan-features">
+                                    <li> <i class="fas fa-check mx-2"></i>Access detailed Facebook Ad Set audience
+                                        insights</li>
+                                    <li> <i class="fas fa-check mx-2"></i>Get 2 Times expert support sessions monthly
+                                        from the Adsetspro team</li>
+                                    <li><i class="fas fa-check mx-2"></i>Receive 4 professional social media posters for
+                                        Ads</li>
+                                    <li><i class="fas fa-check mx-2"></i>Limited SEO Team support</li>
+                                    <li><i class="fas fa-check mx-2"></i>40 Fast Indexing Backlinks</li>
+                                </ul>
+                                <div class="mt-auto d-flex justify-content-center">
+                                    <a href="#!" class="btn pricing-plan-purchase-btn">Choose Plan</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card pricing-card pricing-plan-ultimate h-100">
+                            <div class="card-body d-flex flex-column">
+                                <i class="fas fa-server pricing-plan-icon"></i>
+                                <div class="pricing-plan">
+                                    <p class="pricing-plan-title">Advanced</p>
+                                    <h3 class="pricing-plan-cost">₹7999</h3>
+                                </div>
+                                <p class="pricing-sub-title">For Inhouse & Agency:</p>
+                                <ul class="pricing-plan-features">
+                                    <li><i class="fas fa-check mx-2"></i>Manage 6 projects</li>
+                                    <li><i class="fas fa-check mx-2"></i>Access detailed Facebook Ad Set audience
+                                        insights</li>
+                                    <li><i class="fas fa-check mx-2"></i>Get 4 expert support sessions monthly from the
+                                        Adsetspro team</li>
+                                    <li><i class="fas fa-check mx-2"></i>Receive 6 professional social media posters for
+                                        ads</li>
+                                    <li><i class="fas fa-check mx-2"></i>Limited website development assistance</li>
+                                    <li><i class="fas fa-check mx-2"></i>Social media account creation</li>
+                                    <li><i class="fas fa-check mx-2"></i>Unlimited SEO team support</li>
+                                    <li><i class="fas fa-check mx-2"></i> 80 fast indexing backlinks</li>
+                                </ul>
+                                <div class="mt-auto d-flex justify-content-center">
+                                    <a href="#!" class="btn pricing-plan-purchase-btn">Choose Plan</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container mt-3">
+                <div class="d-flex align-items-center justify-content-center">
+                    <h4 class="">Planning Big? Choose our Advanced Pack</h4>
+                </div>
+                <div class="mt-4 d-flex justify-content-center">
+
+                    <!-- <a href="contact.html" class="contact-btn">Contact-us</a> -->
+                    <!-- Modal Structure -->
+                    <button type="button" class="btn contact-btn" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Contactus
+                    </button>
+
+
+
+                </div>
+        </section>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times mx-2"></i>
+
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-center text-black">Request custom plan</h4>
+                    <p>Please fill out and submit the contact form below to request a Custom Plan. Our specialists will
+                        contact you to clarify all the details.</p>
+
+                    <!-- Custom Form Starts Here -->
+                    <form id="custom-plan-form" class="custom-plan-form-container">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company name</label>
+                            <input type="text" class="form-control" id="company" name="company" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Comments</label>
+                            <textarea class="form-control" id="comments" name="comments" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agree_terms" name="agree_terms"
+                                required>
+                            <label class="form-check-label" for="agree_terms">
+                                I agree to the <a href="/company/legal/terms-of-service/" target="_blank">Terms of
+                                    Service</a> and <a href="/company/legal/privacy-policy/" target="_blank">Privacy
+                                    Policy</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-submit">Send request</button>
+                    </form>
+                    <!-- Custom Form Ends Here -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- content End Here -->
+    <!-- Footer Section Start Here -->
+    <footer class="site-footer-home3">
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html" class="footer_title footer-logo">ADPRO</a>
+                        <p class="footer_decription">Our approach to SEO is uniquely built around what we know works…and
+                            what we know doesn’t work. With over 200 verified factors in play.</p>
+                        <ul class="footer_social_icon">
+                            <li class="instagram"><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                            <li class="twitter"><a href="javascript:void(0)"><i class="fab fab fa-twitter"></i></a></li>
+
+                            <li class="facebook"><a href="javascript:void(0)"><i class="fab fab fa-facebook-f"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h5>Contacts</h5>
+                            <ul class="footer_url">
+                                <li><i class="fad fa-map-marker-alt"></i><a href="javascript:void(0)">401 University TS,
+                                        Settle, USA</a></li>
+                                <li><i class="fal fa-envelope-open-text"></i><a
+                                        href="mailto:info@example.com">info@example.com</a></li>
+                                <li><i class="fal fa-phone-alt"></i><a href="tel:+800-123-456-78"> +1-800-123-456-78</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h5>Services</h5>
+                            <ul class="ft-menu-list">
+                                <li class="ft-menu-item">
+                                    <a href="javascript:void(0)">SEO for Small Business</a>
+                                </li>
+                                <li class="ft-menu-item">
+                                    <a href="javascript:void(0)">SEO for Local Services</a>
+                                </li>
+                                <li class="ft-menu-item">
+                                    <a href="javascript:void(0)">Enterprise SEO</a>
+                                </li>
+                                <li class="ft-menu-item">
+                                    <a href="javascript:void(0)">National SEO</a>
+                                </li>
+                                <li class="ft-menu-item">
+                                    <a href="javascript:void(0)">International SEO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h5>Instagram</h5>
+                            
+                        </div> 
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer_after text-center">
+            <div class="container">
+                <p>Copyright@2024 Udigi by <a href="javascript:void(0)">Gopinath.M</a> All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End Here -->
+
+    <a onclick="topFunction()" id="back-to-top" title="Go to top" style="display: block;"><i
+            class="far fa-arrow-up"></i></a>
+
+    <!-- bootstrap js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- lazyload js -->
+    <script src="js/jquery.lazyload.min.js"></script>
+    <!-- Countdown js -->
+    <script src="js/jquery.countdown.min.js"></script>
+    <!-- jquery.magnific-popup.min js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+</body>
+<script>
+    const tabs = document.querySelectorAll('.tab');
+    const tabBtns = document.querySelectorAll('.tab__btn');
+
+    const tab_Nav = function (tabBtnClick) {
+        tabBtns.forEach((tabBtn) => {
+            tabBtn.classList.remove('active');
+        });
+
+        tabs.forEach((tab) => {
+            tab.classList.remove('active');
+        });
+
+        tabBtns[tabBtnClick].classList.add('active');
+        tabs[tabBtnClick].classList.add('active');
+    };
+
+    tabBtns.forEach((tabBtn, i) => {
+        tabBtn.addEventListener('click', () => {
+            tab_Nav(i);
+        });
+    });
+
+</script>
+
+
+</html>
