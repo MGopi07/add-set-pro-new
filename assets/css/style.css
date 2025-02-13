@@ -114,7 +114,7 @@ a {
 }
 .font-size-1-44 {
   color: #ccdeff;
-  font-family: "Nunito", sans-serif;
+  font-family: cursive;
   font-size: 44px;
   font-style: normal;
   font-weight: 800;
@@ -138,7 +138,7 @@ a {
 }
 @media (max-width: 425px) {
   .font-size-1-44 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .font-size-1-70 {
     font-size: 30px;
@@ -9963,8 +9963,8 @@ a {
   top: 0;
   content: "\f058";
   font-family: "Font Awesome 5 Free";
-  font-weight: 900; /* Required for some icons */
-  color: blue;
+  font-weight: 600;
+  color: white;
 }
 
 @keyframes UpDown {
