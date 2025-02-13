@@ -9870,15 +9870,6 @@ a {
     margin-left: 16.66666667%;
   }
 }
-/* .marketing-types {
-	height: 600px;
-	width: 600px;
-	margin: 50px auto;
-	border: 1px solid var(--color-secondary);
-	border-radius: 50%;
-	position: relative;
-	z-index: 1;
-} */
 
 .marketing-types {
   height: 600px;
@@ -10083,7 +10074,7 @@ a {
     width: 400px;
   }
   .marketing-types h2 {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   .types-list li {
     font-size: 10px !important;
@@ -10100,6 +10091,17 @@ a {
     height: 150px;
     width: 200px;
   }
+  .types-list {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    grid-column-gap: 30px;
+    margin-top: 25px;
+    border-top: 1px dashed #d6d1d1;
+    padding-top: 16px;
+    color: gray;
+}
 }
 
 .marketing-point i {
@@ -10115,7 +10117,6 @@ a {
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
-
 }
 .hub-container {
   position: relative;
@@ -10136,11 +10137,11 @@ a {
   align-items: center;
   font-size: 14px;
 }
-.hub p{
+.hub p {
   color: white !important;
   margin-top: 20px;
 }
-.icon {
+.hub .icon {
   font-size: 30px;
   background-color: white;
   /* border: 2px solid #ddd; */
@@ -10159,9 +10160,9 @@ a {
   margin-top: 180px;
 }
 
-.star {
+.center-element .star {
   font-size: 36px;
-  background:linear-gradient(106deg, #2ad3f8 10.42%, #933cff 98.32%);
+  background: linear-gradient(106deg, #2ad3f8 10.42%, #933cff 98.32%);
   border-radius: 50%;
   padding: 20px;
   display: inline-block;
@@ -10176,4 +10177,22 @@ a {
   color: white !important;
 }
 
-
+@media (max-width: 480px) {
+  .hub .icon {
+    font-size: 24px;
+    background-color: white;
+    /* border: 2px solid #ddd; */
+    border-radius: 50%;
+    padding: 6px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .center-element {
+    position: relative;
+    margin-top: 120px;
+  }
+}
