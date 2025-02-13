@@ -10061,8 +10061,8 @@ a {
 
 @media (max-width: 480px) {
   .marketing-types {
-    height: 300px !important;
-    width: 300px !important;
+    height: 280px !important;
+    width: 280px !important;
     padding: 30px !important;
   }
   .marketing-types::after {
@@ -10070,8 +10070,8 @@ a {
     left: -50px;
     top: -50px;
     content: "";
-    height: 400px;
-    width: 400px;
+    height: 380px;
+    width: 380px;
   }
   .marketing-types h2 {
     font-size: 14px !important;
