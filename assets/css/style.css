@@ -5046,7 +5046,7 @@ a {
 .marque-area-home-2 {
   position: relative;
 }
-.marque-area-home-2 .marque-group-home-2 {
+/* .marque-area-home-2 .marque-group-home-2 {
   display: flex;
   overflow: hidden;
 }
@@ -5098,8 +5098,35 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+} */
+
+/* .marquee {
+  overflow-x: clip;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
 }
 
+.marquee-inner {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  padding: 12vh 0;
+  will-change: transform;
+}
+
+.marquee-inner img {
+  height: 100%;
+  transition: transform 0.5s;
+  flex-shrink: 0;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.marquee-inner img:hover {
+  transform: scale(1.03);
+} */
+/*-------marquee end------*/
 .recent-work-home-2 {
   position: relative;
   padding-top: 130px;
@@ -10217,7 +10244,7 @@ a {
   height: 80px;
 }
 
-.swiper-slide{
+.swiper-slide {
   background: linear-gradient(135deg, #d9e7ff, #f8f3ff);
   padding: 20px;
   border-radius: 10px;
@@ -10230,7 +10257,7 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.tetimonial-designation{
+.tetimonial-designation {
   font-size: 16px;
   color: #031320 !important;
 }
@@ -10255,6 +10282,50 @@ a {
   .tetimonial-designation {
     font-size: 14px;
   }
+}
+
+/*----------marquee----------*/
+
+.marquee-items {
+  height: 25%;
+  width: auto;
+  padding: 0 20px;
+  /* margin-bottom: 20px; */
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 30px;
+  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 70%, #394345),
+  linear-gradient(270deg, #394345, hsla(0, 0%, 100%, 0) 30%);
+  z-index: 33;
+
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  height: 80%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: black;
+  font-size: 21px;
+  cursor: pointer;
   
+}
+
+.marquee-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
   
 }
