@@ -23,22 +23,6 @@ $.ui = $.ui || {};
 var version = $.ui.version = "1.13.2";
 
 
-/*!
- * jQuery UI Widget 1.13.2
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- */
-
-//>>label: Widget
-//>>group: Core
-//>>description: Provides a factory for creating stateful widgets with a common API.
-//>>docs: http://api.jqueryui.com/jQuery.widget/
-//>>demos: http://jqueryui.com/widget/
-
-
 var widgetUuid = 0;
 var widgetHasOwnProperty = Array.prototype.hasOwnProperty;
 var widgetSlice = Array.prototype.slice;

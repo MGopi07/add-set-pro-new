@@ -114,7 +114,7 @@ a {
 }
 .font-size-1-44 {
   color: #ccdeff;
-  font-family: cursive;
+  font-family: "Nunito", sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 800;
@@ -4391,7 +4391,7 @@ a {
 .seo-house-home-2 {
   position: relative;
   /* padding: 130px 20px; */
-  padding: 80px 20px;
+  padding: 30px 20px;
 }
 .seo-house-home-2 .seo-house-bg-shep-home-2 {
   position: absolute;
@@ -10092,8 +10092,7 @@ a {
     width: 200px;
   }
   .types-list {
-    display: grid
-;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: left;
     grid-column-gap: 30px;
@@ -10101,7 +10100,7 @@ a {
     border-top: 1px dashed #d6d1d1;
     padding-top: 16px;
     color: gray;
-}
+  }
 }
 
 .marketing-point i {
@@ -10195,4 +10194,67 @@ a {
     position: relative;
     margin-top: 120px;
   }
+}
+
+/*-------testimonial--------------*/
+
+.testimonial-text {
+  font-size: 22px;
+  font-style: italic;
+  color: black;
+}
+.swiper-slide {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.swiper-container {
+  width: 100%; /* Ensure the container takes full width */
+  max-width: 100%; /* Avoid overflow issues */
+}
+
+.swiper-slide img {
+  width: 80px; /* More defined sizing */
+  height: 80px;
+}
+
+.swiper-slide{
+  background: linear-gradient(135deg, #d9e7ff, #f8f3ff);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.testimonial-name h5 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1741a7 !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tetimonial-designation{
+  font-size: 16px;
+  color: #031320 !important;
+}
+
+.testimonial-name img {
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .testimonial-text {
+    font-size: 18px;
+  }
+
+  .testimonial-name h5 {
+    font-size: 22px;
+  }
+
+  .tetimonial-designation {
+    font-size: 14px;
+  }
+  
+  
 }
