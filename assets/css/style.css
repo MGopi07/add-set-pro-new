@@ -2968,7 +2968,14 @@ a {
 }
 
 .accordion-container {
-  max-width: 600px;
+  /* max-width: 600px; */
+  max-width: 700px;
+
+}
+.faq-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 991px) {
   .accordion-container {
@@ -4391,7 +4398,8 @@ a {
 .seo-house-home-2 {
   position: relative;
   /* padding: 130px 20px; */
-  padding: 30px 20px;
+  padding: 50px 20px;
+  background: linear-gradient(rgb(224, 242, 254) 47.51%, rgb(255, 255, 255) 100%);
 }
 .seo-house-home-2 .seo-house-bg-shep-home-2 {
   position: absolute;
@@ -4456,7 +4464,8 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  color: #ccdeff;
+  /* color: #ccdeff; */
+  color: #333e59;
   font-family: "Jost", sans-serif;
   margin-top: 22px;
 }
@@ -4620,6 +4629,9 @@ a {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
 }
 .brand-logo-area-home-2 .brand-logo-wrapper {
   display: flex;
@@ -4729,10 +4741,11 @@ a {
 
 .marketing-area-home-2 {
   position: relative;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   padding-left: 20px;
   padding-right: 20px;
+  background: #141414;
 }
 .marketing-area-home-2.services-area {
   padding-bottom: 130px;
@@ -5045,6 +5058,7 @@ a {
 
 .marque-area-home-2 {
   position: relative;
+  padding: 60px 0px 30px 0px;
 }
 /* .marque-area-home-2 .marque-group-home-2 {
   display: flex;
@@ -5458,12 +5472,16 @@ a {
 
 .faq-area-home-2 {
   position: relative;
-  padding-top: 130px;
+  padding-top: 70px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 55px;
+  padding-bottom: 70px;
   background-size: cover;
   background-repeat: no-repeat;
+  background:linear-gradient(rgb(224, 242, 254) 47.51%, rgb(255, 255, 255) 100%);
+}
+.text-blue{
+  color: #1954ed !important;
 }
 @media (max-width: 991px) {
   .faq-area-home-2 {
@@ -5657,10 +5675,12 @@ a {
 
 .blog-area-home-2 {
   position: relative;
-  padding-top: 130px;
+  padding-top: 70px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 130px;
+  padding-bottom: 70px;
+  /* background: #141414; */
+  
 }
 @media (max-width: 991px) {
   .blog-area-home-2 {
@@ -10164,7 +10184,7 @@ a {
   font-size: 14px;
 }
 .hub p {
-  color: white !important;
+  color: black !important;
   margin-top: 20px;
 }
 .hub .icon {
