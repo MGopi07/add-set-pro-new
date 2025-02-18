@@ -1295,7 +1295,7 @@ a {
 }
 .header-area-1 .header-wrapper .get-in-touch a:first-child {
   position: relative;
-  margin-left: -5px;
+  /* margin-left: -5px; */
 }
 .header-area-1 .header-wrapper .get-in-touch a:first-child:hover span svg {
   transition-timing-function: linear;
@@ -4054,6 +4054,7 @@ a {
 .blog-area-home-1 .blog-wrapper .blog-meta {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 15px;
 }
 @media (max-width: 400px) {
@@ -5682,7 +5683,7 @@ a {
   /* background: #141414; */
   
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .blog-area-home-2 {
     padding-top: 70px;
     padding-bottom: 100px;
@@ -5840,7 +5841,7 @@ a {
 }
 .blog-area-home-2 .blog-wrapper .blog-inner-left:hover .blog-left-thumb img {
   transform: scale(1.04);
-}
+} */
 
 .hero-area {
   position: relative;
@@ -7439,7 +7440,8 @@ a {
   padding-top: 70px;
 }
 .blog-area-home-3 .blog-area-wrapper .blog-inner {
-  padding: 50px 35px;
+  /* padding: 50px 35px; */
+  padding: 30px 15px;
   background-color: #031320;
 }
 @media (max-width: 991px) {
@@ -7539,6 +7541,7 @@ a {
   margin-top: 17px;
   padding-bottom: 36px;
   border-bottom: 1px solid rgba(221, 221, 221, 0.1);
+  text-align: justify;
 }
 @media (max-width: 1255px) {
   .blog-area-home-3 .blog-area-wrapper .blog-inner p br {
@@ -7653,13 +7656,13 @@ a {
   }
 }
 .blog-area-home-3.b-page .blog-inner a:hover {
-  color: #ccff00 !important;
+  color: #0059ff !important;
 }
 .blog-area-home-3.b-page .blog-inner a:hover span {
-  color: #ccff00 !important;
+  color: #0059ff !important;
 }
 .blog-area-home-3.b-page .blog-inner a:hover svg path {
-  fill: #ccff00 !important;
+  fill: #0059ff !important;
 }
 
 .team-area-about-inner {
@@ -10351,14 +10354,6 @@ a {
 }
 @media (max-width: 576px) {
   
-  /* .marquee-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-    width: 40%;
-    
-  } */
   .marquee-items{
     padding:10px !important;
   }
