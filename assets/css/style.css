@@ -10108,8 +10108,8 @@ a {
 
 @media (max-width: 480px) {
   .marketing-types {
-    height: 280px !important;
-    width: 280px !important;
+    height: 250px !important;
+    width: 250px !important;
     padding: 30px !important;
   }
   .marketing-types::after {
@@ -10117,8 +10117,8 @@ a {
     left: -50px;
     top: -50px;
     content: "";
-    height: 380px;
-    width: 380px;
+    height: 350px;
+    width: 350px;
   }
   .marketing-types h2 {
     font-size: 14px !important;
@@ -10348,4 +10348,30 @@ a {
   width: 300px;
   border-radius: 10px;
   
+}
+@media (max-width: 576px) {
+  
+  /* .marquee-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 40%;
+    
+  } */
+  .marquee-items{
+    padding:10px !important;
+  }
+  .marquee-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 150px;
+    border-radius: 10px;
+    
+  }
+  .marquee-item.mobile_none{
+    display: none;
+  }
 }
